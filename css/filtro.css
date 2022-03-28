@@ -1,0 +1,20 @@
+#produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.produto-filtro img{
+    margin: 0 70px 0 70px;
+    background-color: #d63447;
+    width: 150px;
+    border-radius: 100%;
+    opacity: 0.7;
+    transition: 0.8s;
+}
+
+.produto-filtro img:hover{
+    opacity: 1;
+    cursor: pointer;
+}

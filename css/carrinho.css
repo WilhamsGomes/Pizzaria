@@ -1,0 +1,82 @@
+.carrinho_itens{
+    z-index: 10;
+    position: fixed;
+    background-color: #d63447;
+    width: 480px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 550px;
+    border-radius: 15px;
+}
+
+.ativo{
+    display: none;
+}
+
+.finalizacao{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#valor-total{
+    font-size: 22px;
+    color: white;
+}
+
+#nosso-carrinho{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    color: white;
+    font-style: italic;
+    padding: 20px;
+    font-size: 26px;
+    overflow: auto;
+    text-align:start;
+}
+
+#finalizar-compra{
+    background-color: #F57B51;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#finalizar-compra:hover, #fechar:hover{
+    cursor: pointer;
+}
+
+#fechar{
+    background-color: #d63447;
+    color:white;
+    border: none;
+}
+
+submit{
+    text-align: center;
+    margin-left: 15px;
+}
+
+#limpar{
+    color: white;
+}
+
+.butoes-carro{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+a, submit:hover{
+    cursor: pointer;
+}

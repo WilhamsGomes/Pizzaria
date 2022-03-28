@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Delivery</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/inicial.css">
+    <link rel="stylesheet" href="css/filtro.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+
+    <link rel="icon" type="image/x-icon" href="img/Logo.png">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    
+</head>
+
+<body>
+    
+    <div class="carrinho_itens ativo">
+        <p id="nosso-carrinho"> Carrinho Vazio ;( </p>
+        <div class="finalizacao">
+            <div>
+                <h4 id="valor-total">R$0.00</h4>
+            </div>
+            <div class="butoes-carro">
+                <a id="fechar" onclick="fechar()">Fechar</a>
+                <submit id="limpar" onclick="limpar()"> Limpar tudo</submit>
+                <submit id="finalizar-compra" onclick="finalizarCompra()">Finalizar compra</submit>
+            </div>
+        </div>
+        
+    </div>
+
+    <main>
+        <section id="inicial">
+            <header class="cabecalho">
+                <img class="logo" src="img/Logo.png" alt="logo-ficticia">
+                <nav class="nav-bar">
+                    <ul>
+                        <li>Início</li>
+                        <li>Menu</li>
+                        <li>Sobre nós</li>
+                    </ul>
+                </nav>
+                <div class="infos-cabecalho">
+                    <p>+81 99557-0677</p>
+                    <p class="btn-pedido-online">Pedir online</p>
+                    <img id="abrir-carrinho" class="carrinho" src="img/IconCarrinho.png" onclick="ativar()">
+                </div>
+
+            </header>
+
+            <div class="tela-inicial">
+                <div class="lado-esquerdo" data-aos="fade-right" data-aos-duration="3000">
+                    <h3 class="subtitulo">A melhor pizzaria de Recife e RMR</h3>
+                    <h1 class="titulo">Peça rápido, aprecie <span>lentamente.</span></h1>
+                    <p class="publi">Pizzas com massa <span>feita na hora</span>, assada na pedra no <span>forno e a
+                            lenha!</span></p>
+
+                    <div class="botoes">
+                        <a href="#" class="btn-pedir">Pedir agora</a>
+                        <a href="#" class="ver-menu">Ver Menu</a>
+                    </div>
+
+                    <div class="avaliacoes-clientes">
+                        <img src="https://pbs.twimg.com/media/FNayB9DXMA4ZVPK?format=jpg&name=4096x4096"
+                            alt="Foto cliente pizza">
+                        <img src="https://pbs.twimg.com/media/FNayB9DXMA4ZVPK?format=jpg&name=4096x4096"
+                            alt="Foto cliente pizza">
+                        <img src="https://pbs.twimg.com/media/FNayB9DXMA4ZVPK?format=jpg&name=4096x4096"
+                            alt="Foto cliente pizza">
+                        <div class="avaliacoes">
+                            <h2>Nossos clientes satisfeitos</h2>
+                            <div class="feedback">
+                                <img src="https://cdn-icons-png.flaticon.com/512/148/148841.png">
+                                <p> | <span> 4.8 </span> (12.5K avaliações) </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="lado-direito" data-aos="zoom-in" data-aos-duration="3000">
+                    <img class="homem" src="img/Homem.png" alt="homem com pizza na mão">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="form">
+        <form>
+            <input type="text" id="localização" placeholder="Informe sua localização">
+            <button><span class="material-icons">send</span> </button>
+        </form>
+    </div>
+
+    <section id="pizzas">
+        <h1>Pizzas</h1>
+        <div class="produtos">
+            <div class="card">
+                <div class="imagem-card">
+                    <img src="https://s2.glbimg.com/NauS0apjaDKrB0EJY1H-LtOhcQM=/696x390/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/D/Q/NYYDWXQFG9FCq7CBnzaA/pizza.jpeg"
+                        alt="Pizza">
+                </div>
+                <div class="informacoes-card">
+                    <h3 id="nome-produto01"> Pizza de calabresa </h3>
+                    <p>É especialmente preparada com recheio generoso de linguiça calabresa de primeira qualidade,
+                        queijo muçarela e orégano. A linguiça calabresa agrega um sabor único e levemente picante à
+                        pizza.</p>
+                    <div class="preco-comprar">
+                        <span id="preco-item01">49.90</span>
+                        <button id="01" class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imagem-card">
+                    <img src="https://a-static.mlcdn.com.br/1500x1500/pizza-mussarela-saborosa-e-caprichada/restauranteepizzariasensacao/67457686bdba11ebbe3e4201ac18500e/cf2e1bf0274904262f36f68f386dc7c7.jpg"
+                        alt="Pizza">
+                </div>
+                <div class="informacoes-card">
+                    <h3 id="nome-produto02"> Pizza de Mussarela </h3>
+                    <p>A Pizza de Mussarela é coberta com molho de tomate, queijo tipo mussarela, azeitonas pretas e
+                        orégano e massa com fermentação natural, oferece mais sabor e qualidade à sua mesa.</p>
+                    <div class="preco-comprar">
+                        <span id="preco-item02">39.90</span>
+                        <button id="02" class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="produtos">
+            <div class="card">
+                <div class="imagem-card">
+                    <img src="https://www.comerciosnobairro.com.br/anunciante/img/img_produtos/20170529032701_95e82c6a2c7cdc8eb410b3707f3e93a2_105639914_img_produtos.jpg"
+                        alt="Pizza">
+                </div>
+                <div class="informacoes-card">
+                    <h3 id="nome-produto03"> Pizza Portuguesa </h3>
+                    <p>Preparada com a deliciosa combinação de ingredientes como ervilha, azeitona, molho de tomate,
+                        cebola, ovos, queijo, linguiça calabresa e orégano, a Pizza Portuguesa é sucesso em qualquer
+                        mesa.</p>
+                    <div class="preco-comprar">
+                        <span id="preco-item03">69.90</span>
+                        <button id="03" class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imagem-card">
+                    <img src="https://www.ohashiexpress.com.br/shop/wp-content/uploads/2016/05/frango-catupiry.jpg"
+                        alt="Pizza">
+                </div>
+                <div class="informacoes-card">
+                    <h3 id="nome-produto04"> Pizza de Frango esp. </h3>
+                    <p>A Pizza de Frango com Requeijão possui uma massa leve e um recheio especial, composto pelo nosso
+                        frango desfiado, queijo mussarela e requeijão, que garantem, em poucos minutos, um sabor
+                        delicioso para diversos momentos.</p>
+                    <div class="preco-comprar">
+                        <span id="preco-item04">44.90</span>
+                        <button id="04" class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/carrinho.js"></script>
+</body>
+
+</html>
