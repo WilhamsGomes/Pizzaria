@@ -12,6 +12,10 @@
 
 ![image](https://user-images.githubusercontent.com/71606861/160686287-a5a46392-d0f4-42ad-9f4d-b9acf9311ea5.png)
 
+# Acesse em: 💻
+  
+https://wilhamsgomes.github.io/Pizzaria/
+  
 # Ferramentas utilizadas 🚀
 - HTML
 - CSS
