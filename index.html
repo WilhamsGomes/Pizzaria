@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/filtro.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/responsividade.css">
 
     <link rel="icon" type="image/x-icon" href="img/Logo.png">
 
@@ -45,14 +46,14 @@
                 <img class="logo" src="img/Logo.png" alt="logo-ficticia">
                 <nav class="nav-bar">
                     <ul>
-                        <li>Início</li>
-                        <li>Menu</li>
+                        <a href="#inicial"> <li>Início</li> </a>
+                        <a href="#pizzas"> <li>Menu</li> </a>
                         <li>Sobre nós</li>
                     </ul>
                 </nav>
                 <div class="infos-cabecalho">
-                    <p>+81 99557-0677</p>
-                    <p class="btn-pedido-online">Pedir online</p>
+                    <p class="number">+81 9xxxx-xxxx</p>
+                    <p class="btn-pedido-online" onclick="ativar()">Pedir online</p>
                     <img id="abrir-carrinho" class="carrinho" src="img/IconCarrinho.png" onclick="ativar()">
                 </div>
 
@@ -66,8 +67,8 @@
                             lenha!</span></p>
 
                     <div class="botoes">
-                        <a href="#" class="btn-pedir">Pedir agora</a>
-                        <a href="#" class="ver-menu">Ver Menu</a>
+                        <a href="#" class="btn-pedir" onclick="ativar()">Pedir agora</a>
+                        <a href="#pizzas" class="ver-menu">Ver Menu</a>
                     </div>
 
                     <div class="avaliacoes-clientes">
@@ -89,7 +90,6 @@
                 </div>
                 <div class="lado-direito" data-aos="zoom-in" data-aos-duration="3000">
                     <img class="homem" src="img/Homem.png" alt="homem com pizza na mão">
-
                 </div>
             </div>
         </section>
