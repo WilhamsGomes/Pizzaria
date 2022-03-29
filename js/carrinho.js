@@ -9,6 +9,7 @@ let valor_total = 0.0
 
 const mostrarPedido = []
 
+
 button.forEach(button =>{
 
     button.addEventListener("click", () =>{
@@ -65,7 +66,12 @@ let number = '5581995570677'
 
 function finalizarCompra(){
 
+    
+    const endereco = document.getElementById('localização').value
+    console.log(endereco)
+
     const mensagem = mostrarPedido.toString()
-    let link = "https://api.whatsapp.com/send?phone=5581995570677&text= *Bem vindo a Pizzaria Recife* %0A %0A O total do meu pedido foi: *"+ valor_total + "* %0A %0A O Seus itens: %0A %0A" + mensagem;
+    let link = "https://api.whatsapp.com/send?phone=5581995570677&text= *Bem vindo a Pizzaria Recife* %0A %0A O total do meu pedido foi: *"+ valor_total + "* %0A %0A O Seus itens: %0A %0A" + mensagem + "* %0A %0A Endereço: %0A" + endereco;
     window.open(link, "_blank")
+    
 }

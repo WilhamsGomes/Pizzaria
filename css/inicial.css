@@ -193,7 +193,7 @@ form{
     font-size: 15px;
 }
 
-.form button{
+.form a{
     background-color: #d63447;
     color: white;
     width: 90px;
@@ -203,7 +203,7 @@ form{
     margin-left: 25px;
 }
 
-.form button:hover{
+.form a:hover{
     cursor: pointer;
 }
 
